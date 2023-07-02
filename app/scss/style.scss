@@ -36,7 +36,11 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 14px;
+    cursor: pointer;
     color: #FFF;
+    &:hover {
+      font-size: 15px;
+    }
   }
 
   &__text-link {
@@ -128,9 +132,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
+    cursor: pointer;
   }
-
+  
   &__item-title {
     color: $title;
     font-weight: 700;
@@ -605,6 +609,7 @@
 
     &__item-title {
       max-width: 194px;
+      max-height: 75px;
       font-size: 25px;
       line-height: 25px;
     }
@@ -615,7 +620,8 @@
     }
 
     &__dropdown {
-      z-index: 999;
+      width: 267px;
+      height: 298px;
     }
 
     &__form-title {
@@ -666,10 +672,6 @@
       margin-bottom: 39px;
       padding: 5px 15px;
       transition: 0.3s ease;
-
-      &:hover {
-
-      }
     }
 
   }

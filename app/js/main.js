@@ -18,15 +18,3 @@ function toggleDropdown() {
     const dropdown = document.getElementById("dropdown");
     dropdown.classList.toggle("open");
 }
-
-// function removeDiv() {
-//     const screenWidth = window.innerWidth;
-//
-//     if (screenWidth < 768) {
-//         const div = document.getElementById('top__item-img');
-//         div.remove()
-//
-//     }
-// }
-//
-// window.addEventListener('resize', removeDiv);
