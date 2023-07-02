@@ -14,18 +14,18 @@
 <body>
 
 <div class="wrapper">
-    <div class="header-block">
+    <div class="header-block animation">
         <div class="container">
             <div class="header-block__inner">
-                <div class="header-block__item header-block__item-hide">
+                <div class="header-block__item header-block__item-hide" id="phone">
                     <a class="header-block__img-link" href="tel:+375 33 333-33-33">
                         <img class="header-block__img" src="./images/phone-icon.svg" alt="phone">
-                            <p class="header-block__text header-block__text-link">
-                                +375 29 292-29-29 (VEL)
-                            </p>
-                            <p class="header-block__text">
-                                +375 33 333-33-33 (МТС)
-                            </p>
+                        <p class="header-block__text header-block__text-link">
+                            +375 29 292-29-29 (VEL)
+                        </p>
+                        <p class="header-block__text">
+                            +375 33 333-33-33 (МТС)
+                        </p>
 
                     </a>
                 </div>
@@ -44,7 +44,7 @@
     </div>
     <header class="header">
         <div class="container">
-            <div class="header__inner">
+            <div class="header__inner animation">
                 <div class="header__logo">
                     <img class="header__logo-img" src="./images/logo.svg" alt="logo">
                     <h1 class="header__logo-title">EVARUGS</h1>
@@ -65,45 +65,67 @@
             </div>
         </div>
     </header>
-    <main class="main">
-        <section class="top">
+    <main class="main ">
+        <section class="top animation">
             <div class="container">
                 <div class="top__items">
                     <div class="top__item">
                         <h2 class="top__item-title">Инновационные коврики <br>
                             для автомобиля</h2>
                         <p class="top__item-text">в вашем городе</p>
-                        <button class="top__btn">ЗАКАЗАТЬ</button>
+                        <button class="top__btn" type="button" onclick="toggleDropdown()">ЗАКАЗАТЬ</button>
                     </div>
-                    <div class="top__item">
-                        <img class="top__item-img" src="./images/top-img-right.png" alt="image">
+                    <div class="top__form top__dropdown" id="dropdown">
+                        <div class="top__form-items">
+                            <h4 class="top__form-title">ФОРМА ЗАЯВКИ</h4>
+                            <form class="top__form-items" action="">
+                                <div class="top__form-upper-items">
+                                    <input class="top__form-input" placeholder="Ваше имя" type="text">
+                                    <input class="top__form-input" placeholder="Ваш e-mail" type="email">
+                                </div>
+                                <input class="top__form-input top__form-input-text"
+                                       placeholder="Ваше сообщение (марка автомобиля, цвет ковриков, номер телефона)"
+                                       type="text">
+                                <button class="top__form-btn" type="submit">отправить</button>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="top__item top__item-img" id="top__item-img">
+                        <img class="top__item-image" src="./images/top-img-right.png" alt="image">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="about" id="about">
+        <section class="about animation" id="about">
             <div class="container">
                 <h3 class="about__title">Что такое <span>EVA</span> коврики?</h3>
                 <div class="about__items">
                     <div class="about__item">
                         <img class="about__item-img" src="./images/content/about-1st-img.jpg" alt="material">
                         <h4 class="about__item-title">МАТЕРИАЛ</h4>
-                        <p class="about__item-text">Коврики EVA всесезонные и отличаются уникальной поверхностью материала с ячейками ромбовидной формы. Из-за чего вода не проливается при изъятии ковра и не плещется при езде. Коврики воду не пропускают.</p>
+                        <p class="about__item-text">Коврики EVA всесезонные и отличаются уникальной поверхностью
+                            материала с ячейками ромбовидной формы. Из-за чего вода не проливается при изъятии ковра и
+                            не плещется при езде. Коврики воду не пропускают.</p>
                     </div>
                     <div class="about__item">
                         <img class="about__item-img" src="./images/content/about-2st-img.jpg" alt="info">
                         <h4 class="about__item-title">ОТЛИЧИЯ</h4>
-                        <p class="about__item-text">Резиновые коврики загибаются и лезут на педали. EVA коврики такого не допустят! Специальные липучки держат его в одном положении. При желании, для водителя устанавливается подпятник из рельефного алюминия.</p>
+                        <p class="about__item-text">Резиновые коврики загибаются и лезут на педали. EVA коврики такого
+                            не допустят! Специальные липучки держат его в одном положении. При желании, для водителя
+                            устанавливается подпятник из рельефного алюминия.</p>
                     </div>
                     <div class="about__item">
                         <img class="about__item-img" src="./images/content/about-3th-img.jpg" alt="color">
                         <h4 class="about__item-title">РАСЦВЕТКА</h4>
-                        <p class="about__item-text">Автомобильные коврики EVA можно заказать и в индивидуальных размерах и в разных цветах, которые комбинируется на выбор покупателя с такими же цветами окантовочной полипропиленовой ременной ленты.</p>
+                        <p class="about__item-text">Автомобильные коврики EVA можно заказать и в индивидуальных размерах
+                            и в разных цветах, которые комбинируется на выбор покупателя с такими же цветами
+                            окантовочной полипропиленовой ременной ленты.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="feedback" id="feedback">
+        <section class="feedback animation" id="feedback">
             <div class="feedback__inner">
                 <div class="feedback__slider">
                     <div class="feedback__slider-item">
@@ -118,7 +140,8 @@
                     <div class="feedback__slider-item">
                         <img class="feedback__slider-item-img" src="./images/slider-center-img.png" alt="feedback">
                         <div class="feedback__slider-item-info">
-                            <p class="feedback__slider-item-text">Покупала у ребят коврики для Хундай солярис в подарок молодому человеку. Все очень понравилось. Буду советовать только вас.</p>
+                            <p class="feedback__slider-item-text">Покупала у ребят коврики для Хундай солярис в подарок
+                                молодому человеку. Все очень понравилось. Буду советовать только вас.</p>
                             <img class="feedback__slider-item-line" src="./images/Line.png" alt="line">
                             <p class="feedback__slider-item-author">Вера К.</p>
                         </div>
@@ -126,7 +149,8 @@
                     <div class="feedback__slider-item">
                         <img class="feedback__slider-item-img" src="./images/slider-right-img.png" alt="feedback">
                         <div class="feedback__slider-item-info feedback__slider-item-info-p">
-                            <p class="feedback__slider-item-text">Спасибо, все приехало, поставил. Результатом доволен, в машине супер! Заказывал на Ниссан.</p>
+                            <p class="feedback__slider-item-text">Спасибо, все приехало, поставил. Результатом доволен,
+                                в машине супер! Заказывал на Ниссан.</p>
                             <img class="feedback__slider-item-line" src="./images/Line.png" alt="line">
                             <p class="feedback__slider-item-author">Николай П.</p>
                         </div>
@@ -135,7 +159,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer" id="contacts">
+    <footer class="footer animation" id="contacts">
         <div class="container">
             <div class="footer__items">
                 <div class="footer__item">
